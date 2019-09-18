@@ -102,17 +102,17 @@ export default class Composer extends React.Component<ComposerProps> {
         onChange={this.onContentSizeChange}
         onContentSizeChange={this.onContentSizeChange}
         onChangeText={this.onChangeText}
-        style={[
-          styles.textInput,
-          this.props.textInputStyle,
-          { height: this.props.composerHeight },
-        ]}
         autoFocus={this.props.textInputAutoFocus}
         value={this.props.text}
         enablesReturnKeyAutomatically
         underlineColorAndroid='transparent'
         keyboardAppearance={this.props.keyboardAppearance}
         {...this.props.textInputProps}
+        style={[
+          styles.textInput,
+          this.props.textInputStyle,
+          { height: this.props.composerHeight },
+        ]}
       />
     )
   }
